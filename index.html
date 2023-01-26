@@ -77,7 +77,20 @@
         <div class="container hero-container">
           <!-- Hero -->
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn btn">Order Service</button>
+          <button type="button" class="hero-btn btn" data-modal-open>
+            Order Service
+          </button>
+        </div>
+        <!-- ============================MODAL================================= -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="close_btn" data-modal-close>
+              <svg class="close-icon">
+                <use href="./images/icons.svg#icon-astronaut"></use>
+                <!-- ТУТ  ТЕКСТ УБРАТЬ И ДОБАВИТЬ СВГ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <!--====================Benefits========================= -->
@@ -390,5 +403,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
